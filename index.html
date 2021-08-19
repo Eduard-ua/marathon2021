@@ -2,58 +2,358 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Портфолио Junior верстальщика</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Авторские букеты</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="page-header">
       <div class="container">
-        <a class="header-email" href="mailto:enot_neopoznanniy@gmail.com">enot_ne_neopoznanniy@gmail.com</a>
-        <a class="header-phone" href="tel:+79876543210">+7 987 654 32 10</a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item">
+              <a href="#" class="header-nav__link">
+                Каталог
+
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#" class="header-nav__link">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#" class="header-nav__link">
+                Отзывы
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#" class="header-nav__link">
+                <img class="header-logo" src="files/logo_header.png" alt="Botanica - цветы в Петербурге">
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#" class="header-nav__link">
+                Спецпредложения
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#" class="header-nav__link">
+                Контакты
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#" class="header-nav__link">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <section class="hero-image">
-      <div class="container">
-        <h1 class="heading">Не совсем опознанный Енот</h1>
-        <p>Junior верстальщик</p>
-        </div>
-    </section>
-
     <section class="intro">
       <div class="container">
-        <h2 class="subheading">Давайте познакомимся</h2>
-        <figure class="user-image">
-          <img src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
-        </figure>
-        <h3>Пара слов о себе</h3>
-        <p>Текст с парой слов о себе.</p>
-        <h3>Чем могу быть полезен</h3>
-        <p>Текст о том, чем могу быть полезен.</p>
+        <div class="intro__description">
+          <h1 class="intro__title">
+            Авторские букеты
+            в Петербурге
+          </h1>
+          <p class="intro__subtitle">
+            Оригинальные свежие букеты с доставкой по всему городу
+          </p>
+          <a href="#" class="intro__link">
+            Смотреть каталог
+          </a>
+        </div>
+        <img src="files/intro_img_1.jpg" alt="Букет розовых тюльпанов в серой бумаге" class="intro__img intro__img-left">
+        <img src="files/intro_img_2.jpg" alt="Букет белых и розовых роз в бежевой обертке" class="intro__img intro__img-right">
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="advantages">
       <div class="container">
-        <h2 class="subheading">Мои работы</h2>
-          <figure class="project-image">
-            <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">
-          </figure>
-          <a class="button" href="source/project-gloevk/index.html">Открыть страницу</a>
-        <h3>Магазин товаров для дома</h3>
-        <p>Мой первый сайт.</p>
-
-        <h3>Блог начинающего верстальщика</h3>
-        <p>Статический блог про обучение HTML и CSS.</p>
-        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">
+              Быстрая доставка
+            </h3>
+            <p class="advantages__item-description">
+              Можем собрать букет и передать его в доставку всего за час.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">
+              Всегда свежие цветы
+            </h3>
+            <p class="advantages__item-description">
+              Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">
+              Отправляем фото цветов
+            </h3>
+            <p class="advantages__item-description">
+              Перед доставкой сделаем фотографию букета и отправим вам.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
+    <section class="popular">
+      <div class="container">
+        <h2 class="section-title">
+          Популярные букеты
+        </h2>
+          <article class="popular__item">
+            <div class="popular-text">
+            <h3 class="popular__item-title">
+              Букет «Нежность»
+            </h3>
+            <p class="popular__item-description">
+              Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+            </p>
+            <p class="popular__item-size">
+              30 × 40 см
+            </p>
+            <p class="popular__item-price">
+              3600 руб.
+            </p>
+            <a href="" class="popular__item-button">
+              Заказать
+            </a>
+          </div>
+          <img src="files/popular_1.png" alt="Букет белых роз в белой обертке" class="popular__img">
+        </article>
+        
+        <a href="" class="popular__arrow popular__arrow-left"></a>
+        <a href="" class="popular__arrow popular__arrow-right"></a>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="container">
+        <div href="" class="categories__item">
+          <h3 class="categories__item-title"><a class="categories__item-link" href="#">Свадебные букеты</a></h3>
+          <p class="categories__item-subtitle"><a class="categories__item-link" href="#">Букеты для невест</a></p>
+        </div>
+        <div href="" class="categories__item">
+          <h3 class="categories__item-title"><a class="categories__item-link" href="#">Букеты с пионами</a></h3>
+          <p class="categories__item-subtitle"><a class="categories__item-link" href="#">Букеты с сезонными пионами</a></p>
+        </div>
+        <div href="" class="categories__item">
+          <h3 class="categories__item-title"><a class="categories__item-link" href="#">Выбрать букет</a></h3>
+          <p class="categories__item-subtitle"><a class="categories__item-link" href="#">Букеты в ассортименте</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container">
+        <article class="promo__action">
+          <h3 class="promo__action-title">
+            Скидка 10% на первый заказ
+          </h3>
+          <p class="promo__action-subtitle">
+            Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.
+          </p>
+        </article>
+      </div>
+      <img src="files/promo.jpg" alt="Букет цветов лежит на столе, к нему прикосаються женские руки">
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <h2 class="section-title">
+          4 шага к идеальному букету
+        </h2>
+        <ul class="steps__list">
+          <li class="steps__item">
+            <h3 class="steps__item-title">
+              Заказ
+            </h3>
+            <p class="steps__item-description">
+              Выберите понравившийся букет из каталога и оформите заказ
+            </p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__item-title">
+              Уточнение деталей
+            </h3>
+            <p class="steps__item-description">
+              Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали
+            </p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__item-title">
+              Оплата
+            </h3>
+            <p class="steps__item-description">
+              Оплатить заказ можно онлайн на сайте или при получении
+            </p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__item-title">
+              Доставка
+            </h3>
+            <p class="steps__item-description">
+              Курьер позвонит за час до прибытия и доставит заказ вовремя
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="news__description">
+          <h2 class="section-title news__title">
+            Следите за нашими новостями
+          </h2>
+          <p class="news__subtitle">
+            Подписывайтесь на наши соцсети и узнавайте
+            о новинках и акциях первым.
+          </p>
+          <ul class="news__links-list">
+            <li class="news__links-item">
+              <a href="#" class="news__link">Instagram</a>
+            </li>
+            <li class="news__links-item">
+              <a href="#" class="news__link">Facebook</a>
+            </li>
+            <li class="news__links-item">
+              <a href="#" class="news__link">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="news__imgs">
+          <img src="files/news_1.jpg" alt="Букет роз в композиции с зеленой листвой" class="news__img">
+          <img src="files/news_2.jpg" alt="Букет кремовых роз" class="news__img">
+          <img src="files/news_3.jpg" alt="Букет хризонтем в композиции с зеленью в бежевой обертке" class="news__img">
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="container">
+        <h2 class="section-title">
+          Отзывы
+        </h2>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <blockquote class="feedback__blockquote">
+              <p class="feedback__blockquote-cite">
+                Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!
+              </p>
+              <cite class="feedback__blockquote-author">
+                Марина
+              </cite>
+            </blockquote>
+          </li>
+          <li class="feedback__item">
+            <blockquote class="feedback__blockquote">
+              <p class="feedback__blockquote-cite">
+                Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!
+              </p>
+              <cite class="feedback__blockquote-author">
+                Татьяна 
+              </cite>
+            </blockquote>
+          </li>
+          <li class="feedback__item">
+            <blockquote class="feedback__blockquote">
+              <p class="feedback__blockquote-cite">
+                Выбор букетов на любой вкус
+                и цену. Бывают хорошие скидки,
+                а флористы всегда помогут и точно соберут красивый букет!
+              </p>
+              <cite class="feedback__blockquote-author">
+                Ольга
+              </cite>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__information">
+        <h2 class="section-title">
+          Мы ждем вас
+        </h2>
+        <h3 class="contacts__information-title">
+          Приходите к нам:
+        </h3>
+        <p class="contacts__information-description">
+          Санкт-Петербург,
+          ул. Большая Конюшенная, 19
+        </p>
+        <h3 class="contacts__information-title">
+          Режим работы:
+        </h3>
+        <p class="contacts__information-description">
+          Пн-Вск, с 9-00 до 20-00
+        </p>
+
+        <h3 class="contacts__information-title">
+          Позвоните нам:
+        </h3>
+        <p class="contacts__information-description">
+          <a href="tel:+ 7 (812) 983-47-19" class="contacts-tel">+ 7 (812) 983-47-19</a>
+        </p>
+        
+        <h3 class="contacts__information-title">
+          Напишите нам:
+        </h3>
+        <p class="contacts__information-description">
+          <a href="mailto:info@botanika.ru" class="contacts-mail">info@botanika.ru</a> 
+        </p>
+
+      </div>
+    </section>
     <footer class="page-footer">
       <div class="container">
-        <a class="footer-email" href="mailto:enot_neopoznanniy@gmail.com">enot_ne_neopoznanniy@gmail.com</a>
-        <a class="footer-phone" href="tel:+79876543210">+7 987 654 32 10</a>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="" class="footer__menu-link">
+              <img src="files/logo_footer.png" class="footer__logo" alt="Botanica - цветы в Петербурге" >
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__menu-link">
+              Каталог
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__menu-link">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__menu-link">
+              Отзывы
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__menu-link">
+              Спецпредложения
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="" class="footer__menu-link">
+              Контакты
+            </a>
+          </li>
+          <li class="footer__menu-item">
+              <a href="#" class="footer__link">Instagram</a>
+              <a href="#" class="footer__link">Facebook</a>
+              <a href="#" class="footer__link">Twitter</a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
